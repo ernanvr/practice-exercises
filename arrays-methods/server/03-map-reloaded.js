@@ -2,17 +2,21 @@ const orders = [
   {
     customerName: 'John',
     totalPrice: 60,
-    delivered: '1/2/2022'
+    deliveryDate: '',
+    delivered: false
   },
   {
     customerName: 'Peter',
     totalPrice: 120,
-    delivered: '1/2/2022'
+    deliveryDate: '1/2/2022',
+    delivered: true
+
   },
   {
     customerName: 'Mike',
     totalPrice: 30,
-    delivered: '1/2/2022'
+    deliveryDate: '1/2/2022',
+    delivered: true
   }
  ]
  
