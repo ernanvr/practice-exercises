@@ -10,12 +10,12 @@ enum PhotoOrientation {
 class Entity {
   protected _id: number;
   protected _title: string;
-  #hideVar: number;
+  protected _hideVar: number;
 
   constructor(id: number, title: string){
     this._id = id;
     this._title = title;
-    this.#hideVar = 10;
+    this._hideVar = 10;
   }
 
   get id(){ 
@@ -42,6 +42,7 @@ class Picture extends Entity {
   public constructor(id: number, title: string, orientation: PhotoOrientation){
     super(id, title);
     this._orientation = orientation;
+    this._hideVar = 10;
   }
 
   public toString(){
