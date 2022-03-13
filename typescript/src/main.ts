@@ -34,5 +34,13 @@ userinfo = `
   User Name: ${username}
   Phone: ${phoneNumber}
 `
+//ANY
+let idUser: any;
+idUser = 1;
+idUser = '1';
 
-console.log(userinfo);
+let otherUser;
+otherUser = 1;
+otherUser = '1';
+
+console.log(idUser);
