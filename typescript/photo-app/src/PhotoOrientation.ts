@@ -1,4 +1,4 @@
-enum PhotoOrientation {
+export enum PhotoOrientation {
   Landscape,
   Portrait,
   Square,
