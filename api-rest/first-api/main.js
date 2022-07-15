@@ -6,9 +6,9 @@ fetch(URL).then((response) => response.json()).then(data => {
   img.src = data[0].url;
 })
 
-button.onclick = () => {
-  fetch(URL).then((response) => response.json()).then(data => {
-    img.src = data[0].url;
-  })
+button.onclick = async () => {
+  const response = await fetch( URL );
+  const data = await response.json();
+  img.src = data[0].url;
 }
 
